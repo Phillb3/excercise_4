@@ -37,7 +37,7 @@ var colorScale = d3.scale.category10()
 var circles = myG.selectAll('circle')
   .data(data)          
   .enter().append('circle').call(circleFunction)
-  .style('fill', function(d) { return colorScale(d)})
+  .style('fill', function(d) { return colorScale(d."location")})
 
 // Axis function
 var xAxisFunction = d3.svg.axis()
