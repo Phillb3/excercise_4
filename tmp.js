@@ -43,7 +43,7 @@ var circles = myG.selectAll('circle')
 var xAxisFunction = d3.svg.axis()
   .scale(xScale)
   .orient('bottom')
-  .ticks(4)
+  .ticks(8)
 
 // Append axis
 var xAxis = d3.select('#my-g').append('g').attr('class', 'axis')
@@ -54,7 +54,7 @@ var xAxis = d3.select('#my-g').append('g').attr('class', 'axis')
 var yAxisFunction = d3.svg.axis()
         .scale(yScale)
         .orient('left')
-        .ticks(4)
+        .ticks(8)
 
 // Append axis
 var yAxis = d3.select('#my-g').append('g').attr('class', 'axis')
